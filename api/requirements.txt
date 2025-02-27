@@ -1,0 +1,13 @@
+dotenv
+flask
+flask_sqlalchemy
+flask_caching
+flask_migrate
+flask_cors
+celery
+structlog
+waitress
+pywin32
+redis
+geoalchemy2
+pytz

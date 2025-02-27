@@ -1,0 +1,8 @@
+.body {
+  height: calc(100vh - 30px);
+  position: relative;
+}
+
+.main {
+  min-height: calc(100vh - 30px);
+}

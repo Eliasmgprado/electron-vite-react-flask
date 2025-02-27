@@ -26,7 +26,7 @@ const Update = () => {
     /**
      * @type {import('electron-updater').UpdateCheckResult | null | { message: string, error: Error }}
      */
-    const result = await window.ipcRenderer.invoke('check-update')
+    const result = await window.ipcRenderer.invoke('app:update:check-update')
     setProgressInfo({ percent: 0 })
     setChecking(false)
     setModalOpen(true)

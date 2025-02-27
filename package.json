@@ -1,14 +1,20 @@
 {
-  "name": "electron-vite-react",
-  "version": "2.2.0",
+  "name": "electron-vite-react-flask",
+  "version": "1.0.0",
   "main": "dist-electron/main/index.js",
-  "description": "Electron Vite React boilerplate.",
-  "author": "草鞋没号 <308487730@qq.com>",
+  "description": "Electron Vite React boilerplate with Flask integration.",
+  "author": "Author Name <308487730@qq.com>",
   "license": "MIT",
   "private": true,
   "debug": {
     "env": {
       "VITE_DEV_SERVER_URL": "http://127.0.0.1:7777/"
+    }
+  },
+  "flask": {
+    "env": {
+      "FLASK_SERVER_URL": "http://127.0.0.1:5000",
+      "FLASK_PROXY_URL": "/api"
     }
   },
   "type": "module",
@@ -20,10 +26,16 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "electron-updater": "^6.3.9"
+    "@types/wicg-file-system-access": "^2023.10.5",
+    "custom-electron-titlebar": "^4.2.8",
+    "electron-log": "^5.3.0",
+    "electron-updater": "^6.3.9",
+    "ps-tree": "^1.2.0",
+    "react-router-dom": "^7.2.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.48.2",
+    "@types/ps-tree": "^1.1.6",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",

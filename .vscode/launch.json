@@ -5,7 +5,7 @@
   "version": "0.2.0",
   "compounds": [
     {
-      "name": "Debug App",
+      "name": "Debug Electron App",
       "preLaunchTask": "Before Debug",
       "configurations": [
         "Debug Main Process",
