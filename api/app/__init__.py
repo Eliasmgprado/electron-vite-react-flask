@@ -86,56 +86,6 @@ def create_app(config_name):
     # Cache
     cache.init_app(app)
 
-    # ApiFairy Initialization (DOCS Generator)
-    # apifairy.init_app(app)
-
-    # admin
-    # admin.init_app(app)
-
-    # @apifairy.process_apispec
-    # def my_apispec_processor(spec):
-    #     spec["components"]["securitySchemes"]["token_auth"]["description"] = (
-    #         "Forneça o token do tipo Bearer no cabeçalho de autorização (Authorization) ao fazer pedidos de recursos protegidos."
-    #         "\n\n"
-    #         "Examplo: `Authorization: Bearer afwsfrMDZFNRlcTaaGtjKaeMKUiTk8pg`"
-    #     )
-
-    #     # print(spec["paths"].items())
-
-    #     def sort_path(item):
-    #         # print(item[1])
-    #         # print(item[1].get("post"))
-    #         return item[1].get("get", item[1].get("post", item[1].get("put")))[
-    #             "summary"
-    #         ]
-
-    #     spec["paths"] = {
-    #         k: v
-    #         for k, v in sorted(
-    #             spec["paths"].items(),
-    #             key=sort_path,
-    #         )
-    #     }
-    #     spec["components"]["schemas"] = {
-    #         k: v
-    #         for k, v in sorted(
-    #             spec["components"]["schemas"].items(),
-    #             key=lambda item: item[0],
-    #         )
-    #     }
-    #     # print(spec["components"]["schemas"])
-
-    #     # print(spec["components"])
-    #     spec["servers"] = []
-    #     return spec
-
-    # @apifairy.error_handler
-    # def apifairy_error_handler(status_code, messages):
-    #     print(messages)
-    #     return {
-    #         "error": {"code": status_code, "message": {**messages, "validation": True}}
-    #     }, status_code
-
     # # Setup the debug toolbar
     # app.config["DEBUG_TB_TEMPLATE_EDITOR_ENABLED"] = True
     # app.config["DEBUG_TB_PROFILER_ENABLED"] = True
